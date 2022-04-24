@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(76, 78, 76);
+}
+ .lompe a:hover{
+    color: rgb(76, 78, 76);
+    text-decoration: underline;
+}
+nav .onglets a:hover {
+    color: rgb(76, 78, 76);
+} 
+nav h1{
+    color: #154d6e;
+    font-family: 'Playfair Display',sans-serif;
+    font-size: 30px;
+    margin: 4px;
+}
+.lompe{
+    padding: 10px;
+}
+.lompe a {
+    text-decoration: none;
+    color: #154d6e;
+}
+.title a{
+    text-decoration: none;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 500px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #154d6e;
+    margin-right: 10px;
+    border-bottom: 1px solid #154d6e;
+    padding-bottom: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./res/Industrie-du-futur-min-e1605544101828.webp');
+    background-size: cover;
+    color: aliceblue;
+    padding: 40px;
+    border-bottom: 5px solid rgb(76, 78, 76);
+}
+.me_ph img {
+    display: flex;
+    flex: 0 0 30%;
+    /* padding: 20px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    object-fit: revert;
+}
+
+form{
+    padding: 40px; 
+    background-color: #154d6e;
+    color: aliceblue;
+}
+
+header h1{
+    font-family: 'Playfair Display','sans-serif';
+    font-size: 50px;
+}
+
+header h4{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+header button{
+    padding: 10px 20px;
+    color: #154d6e ;
+    border: none;
+    font-size: 20px;
+    font-family: 'Playfair Display','sans-serif';
+    outline: none;
+    cursor: pointer;
+}
+
+.main{
+   margin-top: 40px; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.card_projet{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left_projet{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #154d6e ;
+    color: aliceblue;
+}
+
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #154d6e ;
+    color: aliceblue;
+}
+.main .content .card.right{
+    flex: 0 0 70%;
+}
+/* .main .content .card .right img{
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+} */
+.main .content .card .right img {
+    height: 100%;
+    width: 400px;
+    background-size: cover;
+}
+footer{
+    margin-top: 40px;
+    border-top: 5px solid rgb(76, 78, 76);
+    background-color: #154d6e;
+    color: aliceblue;
+    padding: 30px 100px;
+}
+
+footer h1{
+    font-family: 'Playfair Display' , sans-serif;
+    border-bottom: 1px solid aliceblue;
+    padding: 5px;
+}
+
+/* footer .services{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .services .service{
+    margin-right: 30px;
+    padding: 10px;
+} */
+footer .services {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+
+
+@media screen and (max-width:767px){
+    .main .content .card {
+        display: inherit;
+    }
+    .main .content .card .right img {
+        width: 100%;
+    }
+    footer {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:480px){
+    nav h1 {
+        text-align: center;
+    }
+    nav .onglets a {
+        margin: 2px;
+        padding-bottom: 0;
+        font-size: 15px;
+    }
+    /* nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    } */
+    nav .onglets {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom: 20px;
+    }
+    footer .services {
+        display: grid;
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+    .card h1 {
+        font-size: 20px;
+    }
+    header button {
+        font-size: 18px;
+    }
+    header {
+        padding: 40px 15px;
+    }
+    header h4 {
+        font-size: 13px;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:768px){
+    footer .services {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width:1000px){
+    nav .onglets{
+        margin-right: 10px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:1200px){
+    nav .onglets{
+        margin-right: 10px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
